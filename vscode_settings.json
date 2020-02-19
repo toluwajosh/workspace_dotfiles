@@ -1,0 +1,20 @@
+{
+    "editor.fontSize": 12,
+    "editor.autoIndent": false,
+    "editor.wordWrapColumn": 120,
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.scrollback": 1000000,
+    "terminal.external.linuxExec": "terminator",
+    "window.zoomLevel": -2,
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Monokai",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "git.suggestSmartCommit": false,
+    "python.linting.pycodestyleEnabled": true,
+    "editor.rulers": [
+        79
+    ],
+}
