@@ -1,5 +1,6 @@
 {
     "editor.fontSize": 12,
+    "window.zoomLevel": -2,
     "editor.autoIndent": false,
     "editor.wordWrapColumn": 120,
     "debug.console.fontSize": 12,
@@ -7,9 +8,7 @@
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.scrollback": 1000000,
     "terminal.external.linuxExec": "terminator",
-    "window.zoomLevel": -2,
-    "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme":"Default Dark+",
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.latex.recipe.default": "lastUsed",
     "git.suggestSmartCommit": false,
@@ -17,4 +16,9 @@
     "editor.rulers": [
         79
     ],
+    "[python]": {"editor.formatOnSave":true},
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=79"
+    ]
 }
