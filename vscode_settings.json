@@ -1,24 +1,24 @@
 {
-    "editor.fontSize": 12,
-    "window.zoomLevel": -2,
-    "editor.autoIndent": false,
-    "editor.wordWrapColumn": 120,
-    "debug.console.fontSize": 12,
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.inheritEnv": true,
     "terminal.integrated.scrollback": 1000000,
     "terminal.external.linuxExec": "terminator",
+    "editor.fontSize": 12,
+    "editor.autoIndent": false,
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+        79
+    ],
+    "window.zoomLevel": -2,
+    "debug.console.fontSize": 12,
     "workbench.colorTheme":"Default Dark+",
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.latex.recipe.default": "lastUsed",
     "git.suggestSmartCommit": false,
     "python.linting.pycodestyleEnabled": true,
-    "editor.rulers": [
-        79
-    ],
     "[python]": {"editor.formatOnSave":true},
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
         "--line-length=79"
     ]
 }
