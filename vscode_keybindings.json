@@ -15,8 +15,23 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus"
+    },
+    {
         "key": "ctrl+u",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
-    }
+    },
+    {
+        "key": "ctrl+[IntlRo]",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+[IntlRo]",
+        "command": "workbench.action.splitEditorOrthogonal",
+        "when": "editorFocus"
+    },
 ]
