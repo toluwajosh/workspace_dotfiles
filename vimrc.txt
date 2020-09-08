@@ -1,0 +1,34 @@
+syntax on
+filetype indent plugin on
+
+" Use 4 spaces instead of tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set autoindent
+
+" colorscheme, (evening, desert, )
+colorscheme evening
+set background=dark
+set term=xterm-256color
+set t_Co=256
+set termguicolors
+
+" For python development
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" PEP 8
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" utf-8 support
+set encoding=utf-8
