@@ -19,16 +19,28 @@ Plugin 'vim-scripts/indentpython.vim'
 " Bundle 'Valloric/YouCompleteMe'
 " for syntax highlighting
 Plugin 'vim-syntastic/syntastic'
+" Plugin 'numirias/semshi'
 " PEP 8 code checking
 Plugin 'nvie/vim-flake8'
+" for proper indenting
+
+" auto pairs
+Plugin 'jiangmiao/auto-pairs'
+" for linting
+Plugin 'dense-analysis/ale'
 " for trees
 Plugin 'scrooloose/nerdtree'
 " git integration
 Plugin 'tpope/vim-fugitive'
 " powerline
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
+" for finding files in terminal
 Plugin 'kien/ctrlp.vim'
+" code completion
+" Plugin 'neoclide/coc.nvim' " needs vim >= 8.1
+Plugin 'davidhalter/jedi'
+Plugin 'davidhalter/jedi-vim'
+
 " ...
 
 " All of your Plugins must be added before the following line
@@ -121,3 +133,33 @@ set nu
 
 " access system clipboard
 set clipboard=unnamed
+
+" linting rules
+let g:ale_linters = {
+      \   'python': ['flake8', 'pylint'],
+      \}
+
+let g:ale_fixers = {
+      \    'python': ['black'],
+      \}
+nmap <F10> :ALEFix<CR>
+let g:ale_fix_on_save = 1
+
+function! LinterStatus() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+
+  return l:counts.total == 0 ? '✨ all good ✨' : printf(
+        \   '😞 %dW %dE',
+        \   all_non_errors,
+        \   all_errors
+        \)
+endfunction
+
+set statusline=
+set statusline+=%m
+set statusline+=\ %f
+set statusline+=%=
+set statusline+=\ %{LinterStatus()}
