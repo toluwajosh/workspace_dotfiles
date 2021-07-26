@@ -1,2 +1,2 @@
-# workspace_setup
+# Workspace dotfiles
 Setup files for my workspace
