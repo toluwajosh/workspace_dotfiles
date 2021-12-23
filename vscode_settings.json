@@ -43,7 +43,7 @@
     "ISSUE",
     "HACK",
     "SUGGESTION",
-    "DEGUB"
+    "DEBUG"
   ],
   "github.copilot.enable": {
     "*": true,
