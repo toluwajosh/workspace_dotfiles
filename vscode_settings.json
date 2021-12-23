@@ -1,24 +1,91 @@
 {
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.inheritEnv": true,
-    "terminal.integrated.scrollback": 1000000,
-    "terminal.external.linuxExec": "terminator",
-    "editor.fontSize": 12,
-    "editor.autoIndent": false,
-    "editor.wordWrapColumn": 120,
-    "editor.rulers": [
-        79
-    ],
-    "window.zoomLevel": -2,
-    "debug.console.fontSize": 12,
-    "workbench.colorTheme":"Default Dark+",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.recipe.default": "lastUsed",
-    "git.suggestSmartCommit": false,
-    "python.linting.pycodestyleEnabled": true,
-    "[python]": {"editor.formatOnSave":true},
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Args": [
-        "--line-length=79"
-    ]
+  "window.zoomLevel": -1,
+  "window.restoreWindows": "none",
+  "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "terminal.integrated.scrollback": 1000000,
+  "terminal.external.windowsExec": "powershell.exe",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.fontFamily": "ProFont for Powerline",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.splitCwd": "initial",
+  "files.autoSave": "afterDelay",
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length=79"],
+  "python.linting.flake8Args": ["--line-length=79"],
+  "python.languageServer": "Pylance",
+  "python.analysis.autoImportCompletions": false,
+  "workbench.colorCustomizations": {},
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "sync.quietSync": true,
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "jupyter.askForKernelRestart": false,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.ignoreLegacyWarning": true,
+  "githubIssues.createIssueTriggers": [
+    "TODO",
+    "todo",
+    "BUG",
+    "FIXME",
+    "ISSUE",
+    "HACK",
+    "SUGGESTION",
+    "DEGUB"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "json": false
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "cmake.configureOnOpen": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
